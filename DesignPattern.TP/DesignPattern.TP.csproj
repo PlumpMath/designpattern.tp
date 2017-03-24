@@ -43,12 +43,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pattern.Composite\Couleur.cs" />
+    <Compile Include="Pattern.Composite\Horodatage.cs" />
+    <Compile Include="Pattern.Composite\Lien.cs" />
+    <Compile Include="Pattern.Composite\Message.cs" />
+    <Compile Include="Pattern.Composite\MessageComposite.cs" />
+    <Compile Include="Pattern.Composite\Texte.cs" />
+    <Compile Include="Pattern.Flyweight\IStyleMessage.cs" />
+    <Compile Include="Pattern.Flyweight\StyleFactory_Flyweight.cs" />
+    <Compile Include="Pattern.Memento\Gardien.cs" />
+    <Compile Include="Pattern.Memento\Memento.cs" />
+    <Compile Include="Pattern.Singleton\ConnexionBDD.cs" />
+    <Compile Include="Pattern.TemplateMethod\JSONWriter.cs" />
+    <Compile Include="Pattern.TemplateMethod\SQLWriter.cs" />
+    <Compile Include="Pattern.TemplateMethod\Writer.cs" />
+    <Compile Include="Pattern.TemplateMethod\XMLWriter.cs" />
+    <Compile Include="Pattern.Visitor\IMessage.cs" />
+    <Compile Include="Pattern.Visitor\IMessageFilter.cs" />
+    <Compile Include="Pattern.Visitor\MessageGrasFilter.cs" />
+    <Compile Include="Pattern.Visitor\MessageHexaFilter.cs" />
+    <Compile Include="Pattern.Visitor\MessageItaliqueFilter.cs" />
+    <Compile Include="Pattern.Visitor\MessageURLFilter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salon\Pattern.Command\EnvoiMessage.cs" />
+    <Compile Include="Salon\Pattern.Command\SendValidateButton.cs" />
+    <Compile Include="Salon\Pattern.Command\SendValidateKeyboard.cs" />
+    <Compile Include="Salon\SalonDiscussion.cs" />
+    <Compile Include="Utilisateur\Pattern.Mediator\Mediator.cs" />
+    <Compile Include="Utilisateur\Pattern.State\Absent.cs" />
+    <Compile Include="Utilisateur\Pattern.State\EtatUser.cs" />
+    <Compile Include="Utilisateur\Pattern.State\Present.cs" />
+    <Compile Include="Utilisateur\User.cs" />
+    <Compile Include="Utilisateur\Utilisateur.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
